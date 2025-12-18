@@ -17,5 +17,5 @@ Works well with Canvas Format
 3. Run the program with the command: `python ZipExtractor.py "path_to_your_folder"`
    - Replace `path_to_your_folder` with the actual path to the folder containing the zip files.
    - Example: `python ZipExtractor.py "C:\Users\YourName\Downloads\StudentFiles"`
-   - All zip files will be extracted to an `ExtractedZips` subfolder within your target folder.
-   - The original zip files will be moved to the `ExtractedZips` folder after extraction.
+   - Each zip file will be extracted to its own folder within the `ExtractedZips` subfolder (e.g., `ExtractedZips/submission_name/`).
+   - The original zip files will be moved to a `ZipFiles` subfolder after extraction.

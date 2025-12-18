@@ -39,21 +39,24 @@ def main():
         print(f"Error: Directory '{target_dir}' does not exist!")
         exit(1)
     
-    # Create ExtractedZips folder in target directory
-    extractZipFolder = os.path.join(target_dir, 'ExtractedZips')
-    if not os.path.exists(extractZipFolder):
-        os.makedirs(extractZipFolder)
+    # Create separate folders for extracted content and zip files
+    extractedFolder = os.path.join(target_dir, 'ExtractedZips')
+    zipFolder = os.path.join(target_dir, 'ZipFiles')
+    
+    if not os.path.exists(extractedFolder):
+        os.makedirs(extractedFolder)
+    if not os.path.exists(zipFolder):
+        os.makedirs(zipFolder)
     
     for file in os.listdir(target_dir):
         if file.endswith('.zip'):
             file_path = os.path.join(target_dir, file)
-            extractZip(file_path, extractZipFolder)
+            extractZip(file_path, extractedFolder)
             print(f"Extracted: {file}")
             
-            # Move the zip file to ExtractedZips folder after extraction
-            fh.moveFile(file_path, extractZipFolder, file)
-            print(f"Moved zip: {file} to {extractZipFolder}")
+            # Move the zip file to ZipFiles folder after extraction
+            fh.moveFile(file_path, zipFolder, file)
+            print(f"Moved zip: {file} to {zipFolder}")
             
 if __name__ == "__main__":
-    main()
     main()
