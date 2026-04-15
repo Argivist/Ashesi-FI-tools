@@ -7,7 +7,9 @@ Made to prevent repetitive tasks.
 ## Current Tools
 
 - Student File Sorter: A program that sorts student files into folders based on their names. **USE CASE:** When students submit multiple files individually and you need to download all submissions and sort them into folders.
+  - [Student File Sorter Readme](./File_Sorter/Readme.md)
 - Zip Extractor: A program that extracts all zip files in a directory into their own folders. **USE CASE:** When students submit their assignments as zip files and you need to extract all submissions at once.
+  - [ZipExtractor Readme](./ZipExtractor/Readme.md)
 
 ## Future Plan
 

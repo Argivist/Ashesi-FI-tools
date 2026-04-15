@@ -2,6 +2,8 @@
 
 For cases where students submit their files as a zip and you need to extract them all at once.
 
+[<< Back](../Readme.md)
+
 ## Note
 
 Works well with Canvas Format
@@ -19,3 +21,7 @@ Works well with Canvas Format
    - Example: `python ZipExtractor.py "C:\Users\YourName\Downloads\StudentFiles"`
    - Each zip file will be extracted to its own folder within the `ExtractedZips` subfolder (e.g., `ExtractedZips/submission_name/`).
    - The original zip files will be moved to a `ZipFiles` subfolder after extraction.
+
+## Warning
+
+- If the extraction takes time check the size of the zip file. Large zip file stake longer.
